@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Mi player 1.0</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-dark py-2">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white" href="#">Mi Player 1.0</a>
+      </div>
+    </header>
+    <!-- Container principale -->
+    <div class="container-fluid mt-2 d-flex justify-content-center">
+      <div class="row d-flex justify-content-center">
+        <!-- Container Audio -->
+        <div class="col-sm-12 col-md-6 card m-2" style="width: 30rem">
+          <div>
+            <h3>Audio</h3>
+            <p>Seleziona un brano in elenco per ascoltare la musica.</p>
+          </div>
+          <!-- Titoli musiche -->
+          <div class="d-flex justify-content-between">
+            <div>
+              <ul id="musicTitles" class="list-group"></ul>
+            </div>
+            <!-- Player musicale -->
+            <div>
+              <audio id="myaudio" controls></audio>
+            </div>
+          </div>
+        </div>
+
+        <!-- Container Video -->
+        <div class="col-sm-12 col-md-6 card m-2" style="width: 30rem">
+          <div>
+            <h3>Video</h3>
+            <p>Seleziona un video in elenco per visualizzarlo.</p>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <!-- Titoli Video -->
+            <div>
+              <ul id="videoTitles" class="list-group"></ul>
+            </div>
+            <!-- Player Video -->
+            <div>
+              <video id="myVideo" width="300" controls></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
